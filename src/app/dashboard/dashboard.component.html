@@ -1,0 +1,43 @@
+<h2>Dashboard</h2>
+
+<div class="card-container row">
+
+  <div class="card col-md-4 bg-primary text-white">
+    <img src="assets/icons/calories.png" alt="Calories Icon" class="mx-auto d-block">
+    <h3>Calories</h3>
+    <canvas id="caloriesChart"></canvas>  <p>Total Calories: {{ caloriesData.labels[1] }}</p>
+    <p>Calories burned {{caloriesData.data[0]}}</p>
+  </div>
+
+  <div class="card col-md-4 bg-success text-white">
+    <img src="assets/icons/heart-attack.png" alt="Heartbeat Icon" class="mx-auto d-block">
+    <h3>Heartbeat</h3>
+    <canvas id="heartRateChart"></canvas>  <p>Average Heart Rate: {{ heartRateData.data[0] }}</p>
+    <p>Average Heart Rate: {{ heartRateData.labels[1] }}</p>
+  </div>
+
+  <div class="card col-md-4 bg-info text-white">
+    <img src="assets/icons/footstep.png" alt="Steps Icon" class="mx-auto d-block">
+    <h3>Steps</h3>
+    <p>{{ stepsData }}</p>
+    <p>Today's Goal: 10,000</p>
+    <div class="progress-bar">
+      <div class="progress" [style.width]="(stepsData / 10000) * 100 + '%'"></div>
+    </div>
+  </div>
+
+  <div class="card col-md-4 bg-info text-whit"> 
+     <img src="assets/icons/track.png" alt="Running Icon" class="mx-auto d-block">
+    <h3>Running Distance</h3>
+    <p>Distance: {{ runningDistanceData.distance }} km</p>
+    <p>Route: {{ runningDistanceData.route[1] }}</p>
+  </div>
+
+</div>
+<!-- <footer>
+<div class="welcome-message">
+  <h2>Welcome, Kamogelo!</h2>
+  <p>"A healthy body is a guest-chamber for the soul; a sick body is a prison."</p>
+  <p>-  Michel de Montaigne</p>
+</div>
+</footer> -->

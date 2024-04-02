@@ -1,0 +1,133 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem;
+    background-image: url("/src/assets/icons/ttr.jpg");
+  }
+  
+  .card {
+    width: 250px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: url("/src/assets/icons/ttr.jpg");
+  }
+  
+  .card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .progress-bar {
+    height: 20px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4CAF50;  /* Green for progress */
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+
+  
+  .card-container {
+    margin: 1rem;
+
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);  /* Subtle hover effect for emphasis */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 70px;
+    height: 70px;
+    margin: 1rem auto;  /* Center the icon within the card */
+  }
+  
+  .card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  
+  
+  .progress-bar {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Specific card styling (optional) */
+  .card.bg-primary {
+    background-color: #303f9f;  /* Rich blue */
+  }
+  
+  .card.bg-success {
+    background-color: #e26918;  /* Rich green */
+  }
+  
+  .card.bg-info {
+    background-color: #e6740b;  /* Rich teal */
+  }
+  .welcome-message {
+    /* grid-row: 1; */
+    margin: 1rem;
+    padding: 1rem 2rem;  /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;  /* Light background color */
+    text-align: center;  /* Center the content within the message box */
+  }
+  
+  .welcome-message h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;  /* Darker text color for better contrast */
+  }
+  
+  .welcome-message p {
+    font-size: 1rem;
+    line-height: 1.5;  /* Increased line-height for better readability */
+    margin-bottom: 0.75rem;  /* Added margin for spacing */
+    color: #666;  /* Subdued text color for quotation */
+  }
+  
+  .welcome-message p:last-child {  /* Style the last paragraph (author) differently */
+    margin-bottom: 0;  /* Remove bottom margin */
+    font-style: italic;  /* Italicize the author's name */
+    color: #999;  /* Lighter text color for author */
+  }
+  
