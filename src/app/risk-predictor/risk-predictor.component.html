@@ -1,0 +1,47 @@
+<div>
+    <h2>Health Risk Predictor</h2>
+    <form (ngSubmit)="onSubmit()">
+      <label>
+        Age:
+        <input type="number" [(ngModel)]="age" name="age" required>
+      </label>
+      <label>
+        BMI:
+        <input type="number" [(ngModel)]="bmi" name="bmi" required>
+      </label>
+      <label>
+        Blood Pressure:
+        <input type="number" [(ngModel)]="blood_pressure" name="blood_pressure" required>
+      </label>
+      <button type="submit">Predict Risk</button>
+    </form>
+    <div *ngIf="risk">
+      <h3>Risk Prediction</h3>
+      <p>Risk: {{ risk }}</p>
+      <p>Risk Score: {{ risk_score }}</p>
+    </div>
+  </div>
+  
+   <!-- <div class="container">
+    <h2>Health Risk Predictor</h2>
+    <form (ngSubmit)="onSubmit()">
+      <label>
+        Age:
+        <input type="number" [(ngModel)]="age" name="age" required>
+      </label>
+      <label>
+        BMI:
+        <input type="number" [(ngModel)]="bmi" name="bmi" required>
+      </label>
+      <label>
+        Blood Pressure:
+        <input type="number" [(ngModel)]="blood_pressure" name="blood_pressure" required>
+      </label>
+      <button type="submit">Predict Risk</button>
+    </form>
+    <div *ngIf="risk">
+      <h3>Risk Prediction</h3>
+      <p>Risk: {{ risk }}</p>
+      <p>Risk Score: {{ risk_score }}</p>
+    </div>
+  </div> -->
